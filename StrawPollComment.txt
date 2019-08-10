@@ -1,0 +1,22 @@
+Please use emoji reactions ON THIS COMMENT to indicate your position on this proposal.
+
+* You do not need to vote on every proposal
+* If you have no opinion, don't vote - that is also useful data
+* If you've already commented on this issue, please still vote so
+      we know your current thoughts
+* Not all proposals solve exactly the same problem, so we may end
+      up accepting proposals that appear to have some overlap
+This is not a binding majority-rule vote, but it will be a very
+significant input into the corresponding ASC decision.
+
+Here are the meanings for the emojis:
+
+* Hooray or Rocket: I support this so strongly that I
+      want to be an advocate for it
+* Heart: I think this is an ideal solution
+* Thumbs up: I'd be happy with this solution
+* Confused: I'd rather we not do this, but I can tolerate it
+* Thumbs down: I'd be actively unhappy, and may even consider
+      other technologies instead
+If you want to explain in more detail, feel free to add another
+comment, but please also vote on this comment.
