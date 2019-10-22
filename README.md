@@ -58,3 +58,21 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
   * Martin Schulz (Rep.)
 * UTK
   * Aurelien Bouteiller (Rep.)
+
+# ASC Voting Process Visualizations
+
+Below are visualizations that summarize the process for voting on PMIx items.
+These visualizations are provided only for conveinence and the governance
+document should be considered the main source of truth.
+
+## Acceptance to Provisional
+
+![accepting-to-provisional](images/accepting-to-provisional.png)
+
+## Elevation to Stable
+
+![elevating-to-stable](images/elevating-to-stable.png)
+
+## Deprection from Stable
+
+![deprecating-from-stable](images/deprecating-from-stable.png)
