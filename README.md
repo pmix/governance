@@ -29,6 +29,7 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
   * Michael Karo (Rep.)
 * Argonne
   * Ken Raffenetti (Rep.)
+  * Shane Snyder (Alt.)
 * IBM
   * Joshua Hursey (Rep.)
   * David Solt (Alt.)
