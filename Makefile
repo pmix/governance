@@ -17,6 +17,7 @@ clean:
 	rm -rf *.idx
 	rm -rf *.aux
 	rm -rf *.toc
+	rm -rf *.synctex.gz
 	rm -f ${FILE}.pdf
 
 
