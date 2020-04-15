@@ -39,6 +39,8 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
 * Intel
   * Ralph Castain (Rep.)
   * Danielle Sikich (Alt.)
+* LANL
+  * Howard Pritchard (Rep.)
 * LLNL
   * Kathryn Mohror (Rep.)
   * Stephen Herbein (Alt.)
