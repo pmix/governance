@@ -4,7 +4,7 @@
 
 Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
 
- * Current version of the [The PMIx Standard Governance Rules](https://github.com/pmix/governance/releases/tag/v1.2)
+ * Current version of the [The PMIx Standard Governance Rules](https://github.com/pmix/governance/releases/latest)
  * [Straw Poll Comment Template](https://github.com/pmix/governance/blob/master/StrawPollComment.txt)
  * PMIx Standard [repo](https://github.com/pmix/pmix-standard)
 
