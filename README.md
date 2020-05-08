@@ -4,7 +4,7 @@
 
 Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
 
- * Current version of the [The PMIx Standard Governance Rules](https://pmix.org/wp-content/uploads/2020/01/pmix_governance-2020-01-27.pdf)
+ * Current version of the [The PMIx Standard Governance Rules](https://github.com/pmix/governance/releases/latest)
  * [Straw Poll Comment Template](https://github.com/pmix/governance/blob/master/StrawPollComment.txt)
  * PMIx Standard [repo](https://github.com/pmix/pmix-standard)
 
@@ -39,6 +39,8 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
 * Intel
   * Ralph Castain (Rep.)
   * Danielle Sikich (Alt.)
+* LANL
+  * Howard Pritchard (Rep.)
 * LLNL
   * Kathryn Mohror (Rep.)
   * Stephen Herbein (Alt.)
