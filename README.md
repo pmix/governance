@@ -25,41 +25,41 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
 
 ## Membership
 
-* Altair
+* **Altair**
   * Michael Karo (Rep.)
-* Argonne
+* **Argonne**
   * Ken Raffenetti (Rep.)
   * Shane Snyder (Alt.)
-* IBM
+* **IBM**
   * Joshua Hursey (Rep.)
   * David Solt (Alt.)
-* INRIA
+* **INRIA**
   * Brice Goglin (Rep.)
   * Guillaume Mercier (Alt.)
-* Intel
+* **Intel**
   * Ralph Castain (Rep.)
   * Danielle Sikich (Alt.)
-* LANL
+* **LANL**
   * Howard Pritchard (Rep.)
-* LLNL
+* **LLNL**
   * Kathryn Mohror (Rep.)
   * Stephen Herbein (Alt.)
-* Microsoft
+* **Microsoft**
   * Jithin Jose (Rep.)
-* Mellanox
+* **NVIDIA (Mellanox)**
   * Artem Polyakov (Rep.)
   * Joshua Ladd (Alt.)
-* ORNL
+* **ORNL**
   * Thomas Naughton (Rep.)
   * Swaroop Pophale (Alt.)
-* OSU
+* **OSU**
   * Hari Subramoni (Rep.)
   * Karthik Manian (Alt.)
-* Rogue Wave
+* **Perforce**
   * John DelSignore (Rep.)
-* TU Munich
+* **TU Munich**
   * Martin Schulz (Rep.)
-* UTK
+* **UTK**
   * Aurelien Bouteiller (Rep.)
 
 # ASC Voting Process Visualizations
