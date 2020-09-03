@@ -4,7 +4,7 @@
 
 Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
 
- * Current version of the [The PMIx Standard Governance Rules](https://pmix.org/wp-content/uploads/2020/01/pmix_governance-2020-01-27.pdf)
+ * Current version of the [The PMIx Standard Governance Rules](https://github.com/pmix/governance/releases/latest)
  * [Straw Poll Comment Template](https://github.com/pmix/governance/blob/master/StrawPollComment.txt)
  * PMIx Standard [repo](https://github.com/pmix/pmix-standard)
 
@@ -25,39 +25,41 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
 
 ## Membership
 
-* Altair
+* **Altair**
   * Michael Karo (Rep.)
-* Argonne
+* **Argonne**
   * Ken Raffenetti (Rep.)
   * Shane Snyder (Alt.)
-* IBM
+* **IBM**
   * Joshua Hursey (Rep.)
   * David Solt (Alt.)
-* INRIA
+* **INRIA**
   * Brice Goglin (Rep.)
   * Guillaume Mercier (Alt.)
-* Intel
+* **Intel**
   * Ralph Castain (Rep.)
   * Danielle Sikich (Alt.)
-* LLNL
+* **LANL**
+  * Howard Pritchard (Rep.)
+* **LLNL**
   * Kathryn Mohror (Rep.)
   * Stephen Herbein (Alt.)
-* Microsoft
+* **Microsoft**
   * Jithin Jose (Rep.)
-* Mellanox
+* **NVIDIA (Mellanox)**
   * Artem Polyakov (Rep.)
   * Joshua Ladd (Alt.)
-* ORNL
+* **ORNL**
   * Thomas Naughton (Rep.)
   * Swaroop Pophale (Alt.)
-* OSU
+* **OSU**
   * Hari Subramoni (Rep.)
   * Karthik Manian (Alt.)
-* Rogue Wave
+* **Perforce**
   * John DelSignore (Rep.)
-* TU Munich
+* **TU Munich**
   * Martin Schulz (Rep.)
-* UTK
+* **UTK**
   * Aurelien Bouteiller (Rep.)
 
 # ASC Voting Process Visualizations
