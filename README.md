@@ -56,7 +56,7 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
   * Swaroop Pophale (Alt.)
 * **OSU**
   * Hari Subramoni (Rep.)
-  * Karthik Manian (Alt.)
+  * Nat Shineman (Alt.)
 * **Perforce**
   * John DelSignore (Rep.)
 * **TU Munich**
