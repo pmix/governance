@@ -1,7 +1,43 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PMIx Standard Governance Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass{article}
 \usepackage[margin=1in]{geometry}
 \usepackage{xcolor}
 
+%%%%%%%%%%%%%%%%%%%
+% Release Managers:
+% - Set is_unofficial_draft = false to remove the watermark
+% - Set VER to the correct version number
+% - Set VERDATE to the Month+Year of the release
+%%%%%%%%%%%%%%%%%%%
+\usepackage[us,24hr]{datetime}
+\usepackage{ifthen}
+\newboolean{is_unofficial_draft}
+\setboolean{is_unofficial_draft}{true}
+
+% Text to appear in the footer on even-numbered pages:
+\ifthenelse{\boolean{is_unofficial_draft}}
+  {\newcommand{\VER}{1.4 (Draft)}
+   \newcommand{\VERDATE}{\emph{Created on \today}}
+  }
+  {\newcommand{\VER}{1.4}
+   \newcommand{\VERDATE}{Month Year}
+  }
+\newcommand{\footerText}{PMIx Standard Governance Rules -- Version \VER{} -- \VERDATE}
+
+% Watermark for the Unofficial Drafts
+\ifthenelse{\boolean{is_unofficial_draft}}
+  {\usepackage{draftwatermark}
+   \SetWatermarkText{\textbf{Unofficial Draft}}
+   \SetWatermarkColor[gray]{0.85}
+   \SetWatermarkFontSize{90pt}
+   \SetWatermarkScale{1}
+   \SetWatermarkAngle{45}
+  }{}
+
+%%%%%%%%%%%%%%%%%%%
+% Links
 \usepackage{hyperref}
 \hypersetup{
     colorlinks,
@@ -10,75 +46,129 @@
     urlcolor={blue!80!black}
 }
 
+%%%%%%%%%%%%%%%%%%%
+% Verbatim code blocks
 \usepackage{color}
 \usepackage{fancyvrb}
 \newcommand{\VerbBar}{|}
 \newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},fontsize=\small}
 \usepackage{framed}
 \definecolor{shadecolor}{RGB}{248,248,248}
 \newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
 \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
 \newcommand{\NormalTok}[1]{#1}
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
+%%%%%%%%%%%%%%%%%%%
+% Fonts
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{courier}
+\usepackage{helvet}
+\usepackage[utf8]{inputenc}
+\usepackage{textgreek}
+
+% Main body serif font:
+\usepackage{tgtermes}
+\usepackage[T1]{fontenc}
+
+% Set default fonts:
+\rmfamily\mdseries\upshape\normalsize
+
+%%%%%%%%%%%%%%%%%%%
+% Acronyms
+\usepackage{acronym}
+\acrodef{PMI}[PMI]{Process Management Interface}
+\acrodef{PMIx}[PMIx]{Process Management Interface - Exascale}
+\acrodef{ASC}[ASC]{Administrative Steering Committee}
+
+%%%%%%%%%%%%%%%%%%%
+% Footers
+\usepackage{fancyhdr}     % makes right/left footers
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\renewcommand{\headrulewidth}{0pt}
+
+\cfoot{}
+\lfoot{\bfseries \mdseries \footerText}
+\rfoot{\bfseries \thepage}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-\title{The PMIx Standard Governance Rules\\
-    Revision 1.4}
-\author{The PMIx Administrative Steering Committee}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
 
+\begin{titlepage}
 
-\maketitle
+\begin{center}
+  \Huge \textsf{The PMIx Standard Governance Rules}
+
+  \vspace{1.0in}
+
+  \huge \textbf{Version \VER{}}
+
+  \vspace{0.15in}
+
+  \Large \textbf{\VERDATE}
+
+\end{center}
+
+\vspace{1.2in}
+
+\vfill
+
+\par
+This document describes the PMIx Standard Governance Rules, version \VER{}.
+
+\vspace{1em}
+
+\textbf{Comments:}
+Please provide comments on the PMIx Standard by filing issues on the document repository \url{https://github.com/pmix/governance/issues} or by sending them to the PMIx Community mailing list at \url{https://groups.google.com/forum/#!forum/pmix}.
+Comments should include the version of this document that you are commenting about, and the page, section, and line numbers that you are referencing.
+Please note that messages sent to the mailing list from an unsubscribed e-mail address will be ignored.
+
+\vspace{1em}
+
+Copyright\textsuperscript{\textcopyright} 2018-2021 PMIx \acf{ASC}.\\
+Permission to copy without fee all or part of this material is granted,
+provided the PMIx \ac{ASC} copyright notice and
+the title of this document appear, and notice is given that copying is by
+permission of PMIx \ac{ASC}.
+
+\end{titlepage}
+
 \newpage
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \tableofcontents
 \newpage
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypertarget{pmix-standard}{%
-\section{PMIx Standard}\label{pmix-standard}}
+\section{PMIx Standard}%
+\label{pmix-standard}}
 
 PMIx is an application programming interface (API) standard to provide
 High Performance Computing (HPC) libraries and programming models with
 portable and well defined access to commonly available distributed
 computing system services.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypertarget{governance}{%
-\subsection{Governance}\label{governance}}
+\subsection{Governance}%
+\label{governance}}
 
 The PMIx Standard is governed by an Administrative Steering Committee
 (ASC) comprised of representatives from a wide range of research,
@@ -94,7 +184,11 @@ If desired, a Member may designate an \textit{Alternate} who is authorized to
 vote on behalf of the Member on occasions when the Representative is not
 present.
 
-\subsubsection{ASC Duties and Organization }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypertarget{gov-asc-duties}{%
+\subsubsection{ASC Duties and Organization}%
+\label{gov-asc-duties}}
 
 The ASC performs the following functions:
 
@@ -155,7 +249,12 @@ newly elected replacement Co-Chair will serve for the remainder of the
 time of the two-year service period of the original Co-Chair. The
 replacement Co-Chair may seek election in subsequent terms.
 
-\subsubsection{ASC Participation}\label{gov-asc-participation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypertarget{gov-asc-participation}{%
+\subsubsection{ASC Participation}%
+\label{gov-asc-participation}}
+
 Participation in the consortium is both formal and informal:
 
 \begin{itemize}
@@ -212,7 +311,11 @@ Participation in the consortium is both formal and informal:
   for voting purposes) counts towards meeting this requirement.
 \end{itemize}
 
-\subsubsection{ASC Meetings}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypertarget{gov-asc-meetings}{%
+\subsubsection{ASC Meetings}%
+\label{gov-asc-meetings}}
 
 The ASC meets quarterly, with at least one quarterly meeting each year
 to be held ``in-person'' at an agreed-upon location unless the ASC
@@ -244,8 +347,11 @@ PR must be frozen to allow for community review of the stable text. For a
 formal reading or vote, it is required that a PDF rendering of the changed document
 be sent to the PMIx mailing list and to the Co-chairs for distribution in the final agenda.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypertarget{modification-of-governance-rules}{%
-\subsubsection{Modification of Governance Rules}\label{modification-of-governance-rules}}
+\subsubsection{Modification of Governance Rules}%
+\label{modification-of-governance-rules}}
 
 Proposals to modify the PMIx governance document begin with the filing
 of a GitHub Pull Request (PR) in a
@@ -293,8 +399,11 @@ submitted if the author(s) so desire, but must be linked to the original
 PR in order to retain full information regarding prior concerns and
 suggestions.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypertarget{general-voting-rules}{%
-\subsubsection{General voting rules}\label{general-voting-rules}}
+\subsubsection{General Voting Rules}%
+\label{general-voting-rules}}
 
 The philosophy and goal of the ASC is to reach consensus on all, if not
 most, issues. In the event that full consensus cannot be reached, the
@@ -374,8 +483,11 @@ The poll comment consists of the following text:
 \end{Highlighting}
 \end{Shaded}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypertarget{release-managers}{%
-\subsubsection{Release Managers}\label{release-managers}}
+\subsubsection{Release Managers}%
+\label{release-managers}}
 
 One or more Release Managers are assigned per release series of the PMIx
 Standard. Coordination and scheduling of releases in the series is
@@ -433,8 +545,11 @@ subsequent major release may begin the approval process until after the
 current candidate has been published. Major releases, therefore, can
 occur no more than once per year.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypertarget{asc-secretaries}{%
-\subsubsection{ASC Secretaries}\label{asc-secretaries}}
+\subsubsection{ASC Secretaries}%
+\label{asc-secretaries}}
 
 ASC Secretaries are responsible for taking and publishing minutes of
 quarterly meetings, and maintaining the PMIx Standard Web site. Other
@@ -455,16 +570,22 @@ Alternate for their Member. A Secretary serving as Representative or
 Alternate for a Member may vote on behalf of the Member subject to the
 one vote per Member limit.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypertarget{asc-guidance}{%
-\subsection{ASC Guidance}\label{asc-guidance}}
+\subsection{ASC Guidance}%
+\label{asc-guidance}}
 
 This section provides general guidance for the PMIx ASC and participants.
 The rationale behind providing this guidance is to outline
 philosophy and best practices the ASC should follow in 
 maintaining the PMIx Standard. 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypertarget{release-schedule-guidance}{%
-\subsubsection{Release Schedule Guidance}\label{release-schedule-guidance}}
+\subsubsection{Release Schedule Guidance}%
+\label{release-schedule-guidance}}
 
 As described in Section~\ref{release-managers},
 the schedule of major releases of the PMIx
@@ -479,8 +600,12 @@ alterations of text that result in changed meaning or clarifications. The
 Release Managers will prioritize major releases of the standard over waiting for
 additional changes that are in progress but not yet accepted by the ASC.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypertarget{administrative-changes-guidance}{%
-\subsubsection{Minor Document Changes Guidance}\label{administrative-changes-guidance}}
+\subsubsection{Minor Document Changes Guidance}%
+\label{administrative-changes-guidance}}
+
 The intention of the rigorous process outlined in 
 Section~\ref{the-standardization-process} for proposed
 changes to the PMIx Standard is to ensure quality and consistency of 
@@ -508,11 +633,11 @@ that the changes do or could alter the meaning of the current standard text,
 the changes will be handled using the full rigorous process
 as described in Section~\ref{the-standardization-process}.
 
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypertarget{the-standardization-process}{%
-\subsection{The Standardization
-Process}\label{the-standardization-process}}
+\subsection{The Standardization Process}%
+\label{the-standardization-process}}
 
 Contributions of any form (e.g., use cases, questions, suggestions) are
 encouraged from anyone interested in the evolution of the PMIx Standard.
@@ -576,8 +701,11 @@ Note that a proposal can be withdrawn by the author(s) at any time for
 any reason up to the time the proposal is committed to the Standard,
 assuming acceptance.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypertarget{classes-of-standard}{%
-\subsubsection{Classes of Standard}\label{classes-of-standard}}
+\subsubsection{Classes of Standard}%
+\label{classes-of-standard}}
 
 The PMIx Standard is composed of a combination of APIs and key-value
 attributes. APIs are intentionally designed to be ``lightweight'' -
@@ -651,8 +779,11 @@ PMIx APIs and attributes are grouped into three classes:
   be granted on a case-by-case basis upon vote of the ASC.
 \end{itemize}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypertarget{initial-discussion}{%
-\subsubsection{Initial discussion}\label{initial-discussion}}
+\subsubsection{Initial Discussion}%
+\label{initial-discussion}}
 
 The process of amending the PMIx Standard begins with the opening of a
 \textit{GitHub Issue} describing the proposed change. The Issue template
@@ -683,8 +814,11 @@ Issue. The Issue will be closed once the associated PRs have been
 resolved (either through by being accepted, withdrawn, or rejected) or
 once the participants are satisfied with the conversation.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypertarget{proposed-modification}{%
-\subsubsection{Proposed modification}\label{proposed-modification}}
+\subsubsection{Proposed Modification}%
+\label{proposed-modification}}
 
 When a specific change to the PMIx Standard has been identified a PR
 must be opened with a reference made to the corresponding Issue(s). When
@@ -723,8 +857,11 @@ not necessarily mean achieving complete resolution on them. A dissent is
 not considered to have ``veto'' power over a proposal, but must be
 addressed to a degree that convinces the majority of ASC Members.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypertarget{provisional-acceptance}{%
-\subsubsection{Provisional acceptance}\label{provisional-acceptance}}
+\subsubsection{Provisional Acceptance}%
+\label{provisional-acceptance}}
 
 The process for acceptance to Provisional status begins when the
 author(s) assign an ``RFC'' label to the GitHub PR, add the
@@ -826,9 +963,11 @@ attribute and/or API consists of the following steps:
 Note that a proposal could be accepted in as little as one quarterly
 meeting.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypertarget{elevation-to-stable-status}{%
-\subsubsection{Elevation to Stable
-status}\label{elevation-to-stable-status}}
+\subsubsection{Elevation to Stable Status}%
+\label{elevation-to-stable-status}}
 
 Provisional elements of the Standard that have been included in at least
 two minor releases become eligible for elevation to Stable
@@ -947,8 +1086,11 @@ Note that a proposal requires a minimum of two quarterly meetings to be
 accepted and that actual publication of the accepted proposal must be
 included in the next major release of the standard.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypertarget{deprecation}{%
-\subsubsection{Deprecation}\label{deprecation}}
+\subsubsection{Deprecation}%
+\label{deprecation}}
 
 Deprecation of one or more existing elements of the Standard, be they
 APIs or attributes, starts by mirroring the path of a newly proposed
