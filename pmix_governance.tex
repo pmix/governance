@@ -1229,5 +1229,124 @@ approved in as little as one quarterly meeting, while a proposal to
 deprecate Stable elements requires a minimum of two quarterly
 meetings to be accepted.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypertarget{major-text-changes}{%
+\subsubsection{Major Text Changes}%
+\label{major-text-changes}}
+
+Major Text Changes are defined as significant changes to descriptive text in
+the document such as introductory text in a chapter, definitions of terms,
+re-organization of chapter contents or chapter placement, non-errata level
+changes to descriptions of APIs including advice to implementors/users.
+
+The process for major text changes begins with a GitHub Draft PR while writing the proposal, optionally proceeded by a GitHub Issue for more general discussion and guidance.
+When the GitHub PR is ready for discussion the authors(s) must remove the Draft PR status, add the ``RFC'' and ``Major Text Change'' labels, and add the Straw Poll Comment to it.
+Then the author(s) must send an announcement of the PR to the PMIx community mailing list requesting consideration of the PR as an errata change.
+This starts the more formal discussion and Straw Poll voting process.
+
+The Straw Poll Comment is used by the ASC as a mechanism for
+obtaining a sense of how many people have viewed the PR and are
+following the discussion. This serves no official purpose other than to
+help define participation in the consensus building process and record
+the tally of votes per emoji category, as defined above.
+The author(s) must engage with any concerns raised on the PR in an attempt to
+resolve those concerns before moving to the next stage in the process.
+
+The ASC Co-Chairs shall monitor the status of discussion on the PR. Once
+discussion appears to have consolidated (either measured by
+participation in the Straw Poll, rate of comments, or a combination of
+both), or at the request of the proposal's author(s), the Co-Chairs will
+schedule the proposal for a reading at the next quarterly meeting of the
+ASC. The proposal shall be included in the announced agenda for the
+meeting along with a link to the PR.
+The Co-Chairs shall label the PR as ``Eligible'' to indicate that the proposal is
+eligible for formal consideration by the ASC at the next quarterly meeting.
+
+Formal approval of a major text change requires that the ASC conduct a full
+presentation on the proposal at two consecutive quarterly meetings. The
+timing of the second meeting may be delayed at the request of the
+author(s) or ASC Members, subject to approval by the ASC.
+
+At least one proposal author must attend the quarterly meeting to
+present the PR and participate in discussion regarding its approval. A
+\textit{Reading} of the proposal shall be conducted at the meeting with the
+author(s) reviewing any questions/concerns raised and how they were
+addressed. During the presentation, someone designated by the Co-Chairs
+will take notes on the PR (and/or Issue) on behalf of the presenter.
+At the conclusion of the reading, a formal vote of the ASC shall be held
+(per the above voting rules) to determine if the proposal is merits further
+consideration or pushed back for further modification.
+The Co-Chairs shall set a GitHub label indicating the
+result as either ``First Vote Passed' or ``Pushed Back''.
+
+At the conclusion of the second meeting where the proposal is up for
+consideration, another formal vote of the ASC shall be held (per the
+above voting rules) to determine final disposition of the proposal. The
+Co-Chairs shall subsequently set a GitHub label indicating the result as
+either ``Accepted'' or ``Pushed Back''. Accepted
+proposals can be committed to the next major release version by the
+Release Manager in accordance with their schedule.
+
+Proposals that are pushed back at any point can be modified and
+resubmitted by the author(s). However, the updated PR must pass through
+the complete major text change process from the beginning to ensure full
+consideration of the revised request. A new PR for this purpose can be
+submitted for the identical elements but must be linked to the original
+PR in order to retain full information regarding prior concerns and
+suggestions. Alternatively, the ASC may suggest a Revision Exception vote
+instead of pushing back the PR.
+
+\hypertarget{process-flow-for-major-text-changes}{%
+\paragraph{Process flow for Major Text Changes}%
+\label{process-flow-for-major-text-changes}}
+
+In summary, the flow for proposing and gaining approval for a major text
+change consists of the following steps:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Optionally, open an Issue describing the proposed change to serve as a discussion
+  forum
+\item
+  Open a Draft PR while writing the proposal itself
+\item
+  When the PR is ready for discussion:
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item 
+    Remove the Draft PR status
+  \item
+    Label the PR ``RFC'' and ``Major Text Change''
+  \item
+    Add the Straw Poll Comment to request feedback
+  \item
+    Send announcement to the mailing list that it is ready for formal review
+  \end{enumerate}
+\item
+  Discuss PR - only new commits can be added
+\item
+  ASC Co-Chairs will schedule the proposal for Reading at next quarterly
+  meeting and label the PR with ``Eligible''
+\item
+  Author(s) present proposal for review at quarterly meeting
+\item
+  Formal ASC vote taken to designate as ``Pushed Back'' or ``First Vote Passed''
+\item
+  If passed, then author(s) present it again at a following quarterly meeting
+\item
+  Formal ASC vote taken to designate as ``Pushed Back'' or ``Accepted``
+\item
+  Accepted proposals merged by Release Managers
+\item
+  Any corresponding Issue(s) are closed
+\end{enumerate}
+
+Note that a proposal requires a minimum of two quarterly meetings to be
+accepted and that actual publication of the accepted proposal must be
+included in the next major release of the standard.
 
 \end{document}
