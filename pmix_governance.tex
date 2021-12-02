@@ -1237,6 +1237,10 @@ Major Text Changes are defined as significant changes to descriptive text in
 the document such as introductory text in a chapter, definitions of terms,
 re-organization of chapter contents or chapter placement, non-errata level
 changes to descriptions of APIs including advice to implementors/users.
+A major text change can target an upcoming minor, or major release of the
+standard, but significant changes in the semantics of existing
+APIs shall target major releases. The definition of ``significant''
+is determined by the members of the ASC.
 
 The process for major text changes begins with a GitHub Draft PR while writing the proposal, optionally proceeded by a GitHub Issue for more general discussion and guidance.
 When the GitHub PR is ready for discussion the author(s) must remove the Draft PR status, add the ``RFC'' and ``Major Text Change'' labels, and add the Straw Poll Comment to it.
@@ -1257,7 +1261,8 @@ participation in the Straw Poll, rate of comments, or a combination of
 both), or at the request of the proposal's author(s), the Co-Chairs will
 schedule the proposal for a reading at the next quarterly meeting of the
 ASC. The proposal shall be included in the announced agenda for the
-meeting along with a link to the PR.
+meeting along with a link to the PR. The PR shall explicitly specify if
+it targets an upcoming minor or major release version of the standard.
 The Co-Chairs shall label the PR as ``Eligible'' to indicate that the proposal is
 eligible for formal consideration by the ASC at the next quarterly meeting.
 
@@ -1283,8 +1288,8 @@ consideration, another formal vote of the ASC shall be held (per the
 above voting rules) to determine final disposition of the proposal. The
 Co-Chairs shall subsequently set a GitHub label indicating the result as
 either ``Accepted'' or ``Pushed Back''. Accepted
-proposals can be committed to the next major release version by the
-Release Manager in accordance with their schedule.
+proposals can be committed to the next specified target release version
+by the Release Manager in accordance with their schedule.
 
 Proposals that are pushed back at any point can be modified and
 resubmitted by the author(s). However, the updated PR must pass through
@@ -1293,7 +1298,9 @@ consideration of the revised request. A new PR for this purpose can be
 submitted for the identical elements but must be linked to the original
 PR in order to retain full information regarding prior concerns and
 suggestions. Alternatively, the ASC may suggest a Revision Exception vote
-instead of pushing back the PR.
+instead of pushing back the PR. The ASC may also suggest a Revision Exception
+vote to change the target release for the PR; in this case, the PR should
+be rebased on the new target release with no other changes to its history.
 
 \hypertarget{process-flow-for-major-text-changes}{%
 \paragraph{Process flow for Major Text Changes}%
@@ -1320,6 +1327,8 @@ change consists of the following steps:
   \item
     Label the PR ``RFC'' and ``Major Text Change''
   \item
+    Milestone the PR with the target (minor or major) release of the standard
+  \item
     Add the Straw Poll Comment to request feedback
   \item
     Send announcement to the mailing list that it is ready for formal review
@@ -1344,8 +1353,7 @@ change consists of the following steps:
 \end{enumerate}
 
 Note that a proposal requires a minimum of two quarterly meetings to be
-accepted and that actual publication of the accepted proposal must be
-included in the next major release of the standard.
+accepted.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
