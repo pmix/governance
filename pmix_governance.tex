@@ -645,16 +645,30 @@ An important aspect of an \ac{ABI} is the size, layout, and alignment of data st
 A stable \ac{ABI} may allow a program compiled with one implementation of the PMIx Standard to run with a different implementation of the PMIx Standard as long as both implementations adhere to the same \ac{ABI}.
 
 The PMIx Standard should strive to maintain a stable \ac{ABI} to support applications and tools that rely on more than one implementation of the PMIx Standard.
-To facilitate such interoperability the PMIx \ac{ASC} will maintain, to the best of their ability, a standard set of headers that are versioned with the PMIx Standard that applications and tools can reference~\footnote{PMIx Headers for ABI Compatibility \url{https://github.com/pmix/pmix-abi}}.
+To facilitate such interoperability the PMIx \ac{ASC} will maintain a standard set of headers that are versioned in relation to the PMIx Standard document that applications and tools can reference~\footnote{PMIx Headers for ABI Compatibility \url{https://github.com/pmix/pmix-abi}}.
 
 In recognition that there are circumstances where the \ac{ABI} needs to be modified this section defines some guidance for making such modifications.
 Additions to the PMIx interface can occur without breaking \ac{ABI} compatibility.
 Deprecating and removing portions of the PMIx interface does break \ac{ABI} compatibility and that process (see Section~\ref{deprecation}) must continue to adhere to the following guidance.
 As such the following text focuses on modifications to the existing PMIx interface.
 
-The PMIx Standard must not modify the \ac{ABI} in minor releases.
-All modifications of the \ac{ABI} must occur in a major release.
-If a Provisional (see Section~\ref{provisional-acceptance}) change requires a modification of the \ac{ABI} then it is no longer eligible to be included in a minor release and must wait to be included in the next major release.
+The PMIx Standard ABI is defined in two parts.
+The \textit{PMIx Standard Stable ABI} represents the Stable PMIx Standard elements (see Section~\ref{classes-of-standard}).
+The \textit{PMIx Standard Provisional ABI} represents the Provisional PMIx Standard elements (see Section~\ref{classes-of-standard}).
+The rationale for this separation is in recognition that Provisional PMIx Standard elements are able to change frequently in response to broad experimentation.
+This is in contrast to Stable PMIx Standard elements which are permanent, non-changing parts of the PMIx Standard.
+
+Both the Stable ABI and Provisional ABI are versioned with two increasing numbers (largely following the Semantic Versioning 2.0.0 specification\footnote{Semantic Versioning \url{https://semver.org/spec/v2.0.0.html}}):
+\begin{itemize}
+\item \texttt{MAJOR} incremented when the ABI changed in a backward-incompatible manner.
+\item \texttt{MINOR} incremented when functionality is added to the ABI in a backward-compatible manner.
+\end{itemize}
+
+The PMIx Standard Stable ABI will increment the \texttt{MAJOR} only in major releases of the PMIx Standard.
+The PMIx Standard Stable ABI may increment the \texttt{MINOR} in any release of the PMIx Standard.
+The PMIx Standard Provisional ABI may increment either the \texttt{MAJOR} or \texttt{MINOR} in any release of the PMIx Standard.
+
+The PMIx ASC will maintain a mapping between the PMIx Standard version and the ABI version.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
