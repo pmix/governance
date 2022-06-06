@@ -13,15 +13,17 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
 ## Leadership
 
 * Co-Chairs
+  * Kathryn Mohror, LLNL (2022-2024) (even year)
   * Joshua Hursey, IBM (2021-2023) (odd year)
-  * Kathryn Mohror, LLNL (2020-2022) (even year)
   * Outgoing / Former
+    * Kathryn Mohror, LLNL (2020-2022) (even year)
     * Joshua Hursey, IBM (2019-2021) (odd year)
     * Ralph Castain, Intel (2018-2020) (even year)
 * Secretaries
+  * Thomas Naughton, ORNL (2022-2024) (even year)
   * Aurelien Bouteiller, UTK (2021-2023) (odd year)
-  * Thomas Naughton, ORNL (2020-2022) (even year)
   * Outgoing / Former
+    * Thomas Naughton, ORNL (2020-2022) (even year)
     * Stephen Herbein, LLNL (2019-2021) (odd year)
 * Release Managers for PMIx v5
   * Ken Raffenetti, ANL
@@ -42,12 +44,10 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
   * Guillaume Mercier (Alt.)
 * **Intel**
   * Jai Dayal (Rep.)
-  * Ralph Castain (Alt.)
 * **LANL**
   * Howard Pritchard (Rep.)
 * **LLNL**
   * Kathryn Mohror (Rep.)
-  * Stephen Herbein (Alt.)
 * **NVIDIA (Mellanox)**
   * Artem Polyakov (Rep.)
   * Joshua Ladd (Alt.)
@@ -63,6 +63,8 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
   * Martin Schulz (Rep.)
 * **UTK**
   * Aurelien Bouteiller (Rep.)
+* **Nanook Consulting**
+  * Ralph Castain (Rep.)
 
 # ASC Voting Process Visualizations
 
