@@ -85,6 +85,8 @@
 \acrodef{PMI}[PMI]{Process Management Interface}
 \acrodef{PMIx}[PMIx]{Process Management Interface - Exascale}
 \acrodef{ASC}[ASC]{Administrative Steering Committee}
+\acrodef{API}[API]{Application Programming Interface}
+\acrodef{ABI}[ABI]{Application Binary Interface}
 
 %%%%%%%%%%%%%%%%%%%
 % Footers
@@ -619,7 +621,7 @@ and \ref{proposed-modification} and then bring the
 changes to the attention of the ASC Co-Chairs and Release Managers.
 The Co-Chairs and Release Managers will evaluate the proposed
 changes to determine whether they are minor or substantive.
-Additionally, all PMIx participants are encouranged to examine
+Additionally, all PMIx participants are encouraged to examine
 and comment on the changes in the pull request to aid the
 Co-Chairs and Release Managers in their decision.
 If all Co-Chairs and Release Managers determine that the
@@ -630,6 +632,45 @@ Alternatively, if any of the Co-Chairs or Release Managers determine
 that the changes do or could alter the meaning of the current standard text, 
 the changes will be handled using the full rigorous process
 as described in Section~\ref{the-standardization-process}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypertarget{abi-changes-guidance}{%
+\subsubsection{Application Binary Interface (ABI) Changes Guidance}%
+\label{abi-changes-guidance}}
+
+An \acf{API} defines how data types, data structures, and functions are represented in source code.
+An \acf{ABI} defines how data types, data structures, and functions are represented in machine code for a given system.
+An important aspect of an \ac{ABI} is the size, layout, and alignment of data structures.
+A stable \ac{ABI} may allow a program compiled with one implementation of the PMIx Standard to run with a different implementation of the PMIx Standard as long as both implementations adhere to the same \ac{ABI}.
+
+The PMIx Standard should strive to maintain a stable \ac{ABI} to support applications and tools that rely on more than one implementation of the PMIx Standard.
+To facilitate such interoperability the PMIx \ac{ASC} will maintain a standard set of headers that are versioned in relation to the PMIx Standard document that applications and tools can reference~\footnote{PMIx Headers for ABI Compatibility \url{https://github.com/pmix/pmix-abi}}.
+
+In recognition that there are circumstances where the \ac{ABI} needs to be modified this section defines some guidance for making such modifications.
+Additions to the PMIx interface can occur without breaking \ac{ABI} compatibility.
+Deprecating portions of the PMIx interface does not break \ac{ABI} compatibility but serves as a warning that the \ac{ABI} may be impacted in the future.
+Removing portions of the PMIx interface does break \ac{ABI} compatibility and that process (see Section~\ref{deprecation}) must continue to adhere to the following guidance.
+As such the following text focuses on modifications to the existing PMIx interface.
+
+The PMIx Standard ABI is defined in two parts.
+The \textit{PMIx Standard Stable ABI} represents the Stable PMIx Standard elements (see Section~\ref{classes-of-standard}).
+The \textit{PMIx Standard Provisional ABI} represents the Provisional PMIx Standard elements (see Section~\ref{classes-of-standard}).
+The rationale for this separation is in recognition that Provisional PMIx Standard elements are able to change frequently in response to broad experimentation.
+This is in contrast to Stable PMIx Standard elements which are permanent, non-changing parts of the PMIx Standard.
+
+Both the Stable ABI and Provisional ABI are versioned with two increasing numbers (largely following the Semantic Versioning 2.0.0 specification\footnote{Semantic Versioning \url{https://semver.org/spec/v2.0.0.html}}):
+\begin{itemize}
+\item \texttt{MAJOR} incremented when the ABI changed in a backward-incompatible manner.
+\item \texttt{MINOR} incremented when functionality is added to the ABI in a backward-compatible manner.
+\end{itemize}
+
+The PMIx Standard Stable ABI will increment the \texttt{MAJOR} only in major releases of the PMIx Standard.
+The PMIx Standard Stable ABI may increment the \texttt{MINOR} in any release of the PMIx Standard.
+The PMIx Standard Provisional ABI may increment either the \texttt{MAJOR} or \texttt{MINOR} in any release of the PMIx Standard.
+
+The PMIx ASC will maintain a mapping between the PMIx Standard version and the ABI version.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
