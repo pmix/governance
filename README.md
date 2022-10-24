@@ -36,6 +36,8 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
 * **Argonne**
   * Ken Raffenetti (Rep.)
   * Shane Snyder (Alt.)
+* **Forschungszentrum Juelich**
+  * Norbert Eicker (Rep.)
 * **IBM**
   * Joshua Hursey (Rep.)
   * David Solt (Alt.)
@@ -48,23 +50,18 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
   * Howard Pritchard (Rep.)
 * **LLNL**
   * Kathryn Mohror (Rep.)
-* **NVIDIA (Mellanox)**
-  * Artem Polyakov (Rep.)
-  * Joshua Ladd (Alt.)
+* **Nanook Consulting**
+  * Ralph Castain (Rep.)
 * **ORNL**
   * Thomas Naughton (Rep.)
   * Swaroop Pophale (Alt.)
 * **OSU**
   * Hari Subramoni (Rep.)
   * Nat Shineman (Alt.)
-* **Perforce**
-  * John DelSignore (Rep.)
 * **TU Munich**
   * Martin Schulz (Rep.)
 * **UTK**
   * Aurelien Bouteiller (Rep.)
-* **Nanook Consulting**
-  * Ralph Castain (Rep.)
 
 # ASC Voting Process Visualizations
 
