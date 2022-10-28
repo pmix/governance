@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/pmix/governance.svg?branch=master)](https://travis-ci.org/pmix/governance)
-
 # PMIx Standard Governance Document
 
 Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
@@ -12,20 +10,23 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
 
 ## Leadership
 
-* Co-Chairs
-  * Kathryn Mohror, LLNL (2022-2024) (even year)
-  * Joshua Hursey, IBM (2021-2023) (odd year)
+* **Co-Chairs**
+  * Aurelien Bouteiller, UTK (2023-2025) (odd year)
+  * Joshua Hursey, IBM (2024) (even year*interm)
   * Outgoing / Former
+    * Kathryn Mohror, LLNL (2022-2023) (even year*)
+    * Joshua Hursey, IBM (2021-2023) (odd year)
     * Kathryn Mohror, LLNL (2020-2022) (even year)
     * Joshua Hursey, IBM (2019-2021) (odd year)
     * Ralph Castain, Intel (2018-2020) (even year)
-* Secretaries
+* **Secretaries**
+  * Norbert Eicker, JSC (2023-2025) (odd year)
   * Thomas Naughton, ORNL (2022-2024) (even year)
-  * Aurelien Bouteiller, UTK (2021-2023) (odd year)
   * Outgoing / Former
+    * Aurelien Bouteiller, UTK (2021-2023) (odd year)
     * Thomas Naughton, ORNL (2020-2022) (even year)
     * Stephen Herbein, LLNL (2019-2021) (odd year)
-* Release Managers for PMIx v5
+* **Release Managers for PMIx v5**
   * Ken Raffenetti, ANL
   * David Solt, IBM
 
