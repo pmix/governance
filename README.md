@@ -37,7 +37,7 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
 * **Argonne**
   * Ken Raffenetti (Rep.)
   * Shane Snyder (Alt.)
-* **Forschungszentrum Juelich**
+* **Forschungszentrum Juelich (JSC) **
   * Norbert Eicker (Rep.)
 * **IBM**
   * Joshua Hursey (Rep.)
@@ -45,8 +45,6 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
 * **INRIA**
   * Brice Goglin (Rep.)
   * Guillaume Mercier (Alt.)
-* **Intel**
-  * Jai Dayal (Rep.)
 * **LANL**
   * Howard Pritchard (Rep.)
 * **LLNL**
