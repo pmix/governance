@@ -37,7 +37,7 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
 * **Argonne**
   * Ken Raffenetti (Rep.)
   * Shane Snyder (Alt.)
-* **Forschungszentrum Juelich (JSC) **
+* **Forschungszentrum Juelich (JSC)**
   * Norbert Eicker (Rep.)
 * **IBM**
   * Joshua Hursey (Rep.)
