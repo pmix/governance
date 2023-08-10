@@ -12,7 +12,7 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
 
 * **Co-Chairs**
   * Aurelien Bouteiller, UTK (2023-2025) (odd year)
-  * Joshua Hursey, IBM (2024) (even year*interm)
+  * Joshua Hursey, IBM (2023-2024) (even year*interm)
   * Outgoing / Former
     * Kathryn Mohror, LLNL (2022-2023) (even year*)
     * Joshua Hursey, IBM (2021-2023) (odd year)
