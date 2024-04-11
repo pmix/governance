@@ -12,8 +12,9 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
 
 * **Co-Chairs**
   * Aurelien Bouteiller, UTK (2023-2025) (odd year)
-  * Joshua Hursey, IBM (2023-2024) (even year*interm)
+  * Thomas Naughton, ORNL (2024-2026) (even year)
   * Outgoing / Former
+    * Joshua Hursey, IBM (2024) (even year*interim)
     * Kathryn Mohror, LLNL (2022-2023) (even year*)
     * Joshua Hursey, IBM (2021-2023) (odd year)
     * Kathryn Mohror, LLNL (2020-2022) (even year)
@@ -21,8 +22,8 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
     * Ralph Castain, Intel (2018-2020) (even year)
 * **Secretaries**
   * Norbert Eicker, JSC (2023-2025) (odd year)
-  * Thomas Naughton, ORNL (2022-2024) (even year)
   * Outgoing / Former
+    * Thomas Naughton, ORNL (2022-2024) (even year)
     * Aurelien Bouteiller, UTK (2021-2023) (odd year)
     * Thomas Naughton, ORNL (2020-2022) (even year)
     * Stephen Herbein, LLNL (2019-2021) (odd year)
