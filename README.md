@@ -11,9 +11,10 @@ Rules used by the Administrative Steering Committee (ASC) for the PMIx Standard.
 ## Leadership
 
 * **Co-Chairs**
-  * Aurelien Bouteiller, UTK (2023-2025) (odd year)
-  * Thomas Naughton, ORNL (2024-2026) (even year)
+  * Aurelien Bouteiller, UTK (2025-2026) (odd year)
+  * Thomas Naughton, ORNL (2024-2025) (even year)
   * Outgoing / Former
+    * Aurelien Bouteiller, UTK (2023-2024) (odd year)
     * Joshua Hursey, IBM (2024) (even year*interim)
     * Kathryn Mohror, LLNL (2022-2023) (even year*)
     * Joshua Hursey, IBM (2021-2023) (odd year)
